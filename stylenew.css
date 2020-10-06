@@ -1,0 +1,341 @@
+*{
+	font-family: 'Montserrat', sans-serif;
+}
+.navbar a, .dropdown{
+	font-weight: 600;
+	color: black;
+
+}
+.frankie{
+  padding-left: 200px;
+  padding-right: 150px;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+.msg{
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 44px;
+  padding:25px;
+
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #E35D6A;
+  font-weight: 400px;
+}
+
+/*search*/
+.button {
+    background-color:#243c4f;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 3px 1px;
+}
+.button4 {
+	border-radius: 50px;
+}
+
+h3
+{
+	font-family: 'Dancing Script', cursive;
+	text-align: center;
+	font-size: 44px;
+	padding-top: 10px;
+}
+h6{
+	text-align: center;
+	font-weight: 200;
+}
+
+hr{
+	width:50%;
+	border:1px solid black;
+}
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+	padding-top: 50px;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 13px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.instagram {
+  background: #ee5b74;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+
+
+
+
+/* Style the form - display items horizontally */
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding-top: 5px;
+}
+
+/* Add some margins for each label */
+.form-inline label {
+  margin: 10px 10px 10px 0;
+  font-family: 'Dancing Script', cursive;
+  font-size: 41px;
+  padding-right: 25px;
+  padding-left: 10px;
+
+}
+
+/* Style the input fields */
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+/* Style the submit button */
+.form-inline button {
+  padding: 10px 20px;
+  background-color: #243c4f;
+  border: 1px solid #ddd;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+.newsletter{
+	background-color: #EEA990
+	
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.carousel-inner{
+	
+  margin:auto;
+  width: 1320px;
+
+  
+ 
+}
+
+#recents
+{
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+.recents-col
+{
+  position: relative;
+	padding: 10px;
+}
+.overlay{
+  position:relative;
+  
+  background:rgb(0,0,0);
+  background:rgb(0,0,0,0.5);
+  color:#f1f1f1;
+  transition: .5s ease;
+  opacity: 0;
+  color:white;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+.recents-col:hover .overlay{
+  opacity: 1;
+}
+.view_recipe{
+	padding-top: 25px;
+	padding-left: 95px;
+
+}
+.recipe_button{
+	padding: 10px 20px;
+	background-color: #243c4f;
+  border: 1px solid #ddd;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.recipe_button:hover {
+  background-color: royalblue;
+}
+
+img.image_effect{
+	width: 350px;
+  height: 350px;
+	transition-property: width;
+  transition-duration: 2s;
+
+}
+img.image_effect:hover{
+	width: 360px;
+   
+}
+.text-center{
+	font-family: 'Dancing Script', cursive;
+	font-size: 41px;
+
+}
+div.newsletter{
+	margin-top: 20px;
+}
+
+/*ABOUT SECTION*/
+
+.image-box {
+  /* Here's the trick */
+  padding-top: 40px;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  box-shadow: inset 0 0 0 50vw rgba(1,0,0,0.22);
+
+  /* Basic background styles */
+  background: var(--image-url) center center;
+  background-size: cover;
+
+  /* Here's the same styles we applied to our content-div earlier */
+  color: black;
+  min-height: 85vh;
+  
+  
+  justify-content: center;
+  
+  /* Add a transition, just for fun */
+  transition: box-shadow .3s ease-out;
+}
+.image-box:hover {
+    box-shadow: inset 0 0 0 50vw rgba(0.5,0,0,0.15);
+    font-family: 'Dancing Script', cursive;
+}
+
+
+
+}
+h1 {
+  font-size: 40px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.aboutcontent{
+	padding-top: 5px;
+	padding-right: 45px;
+	padding-left: 450px;
+	text-align: left;
+}
+.abouthead{
+	font-family: 'Dancing Script', cursive;
+	font-size: 43px;
+	font-weight: 700;
+	text-align: center;
+
+}
+footer{
+	padding: 25px;
+	margin-top: 25px;
+	background-color:#EEA990;
+	color: black;
+}
+.footer-link{
+	color: black;
+}
+.footer-link:hover{
+	color: white;
+
+}
+ul{
+	list-style: none;
+	font-size: 18px;
+	text-align: left;
+	padding-left: 80px;
+}
+.form-group{
+padding-left:55px;
+ 
+ width:80%;
+}
+.form-control{
+	border-radius: 25px;
+
+}
+#exampleFormSubmit{
+	
+	display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    margin: 3px 7px;
+    padding: 5px;
+    padding-right: 15px;
+    width:170px;
+    background-color: #243c4f;
+    color: white;
+
+
+
+}
+#exampleFormSubmit:hover{
+  background-color: royalblue;
+
+}
+}
+
